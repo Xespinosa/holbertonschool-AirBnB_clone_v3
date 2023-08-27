@@ -20,7 +20,7 @@ def status():
 
 @app_views.route('/stats', methods=['GET'], strict_slashes=False)
 def number_objects():
-    """Get the numbers by type"""
+    """Get the amount of each type"""
     classes = [Amenity, City, Place, Review, State, User]
     name = ["amenities", "cities", "places", "reviews", "states", "users"]
 
